@@ -1,7 +1,51 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darksalmon;
+  margin: 0;
+  padding: 0;
+}
+
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+form{
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="submit"],
+button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3 ease;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+
+}
+
+input[type="text"]:focus,
+input[type="submit"]:focus,
+button:focus {
+  outline: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 #github-container {
@@ -10,4 +54,16 @@
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
